@@ -1,3 +1,4 @@
+
 let rb_erkek=document.getElementById("erkek")
 let rb_kadin=document.getElementById("kadin")
 let mesaj=document.getElementById("mesaj")
@@ -45,3 +46,5 @@ function askerlikKontrol(){
         rb_kadin.checked=false;
 
     }
+  
+
