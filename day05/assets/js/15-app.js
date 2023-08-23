@@ -23,3 +23,25 @@ const colors=[
     "sandybrown"
 
 ]
+
+/*  console.log(colors[index]) */
+/* console.log(colors[colors.length-1])  */
+
+let index;
+
+const changeColor = () => { 
+
+    index=Math.floor(Math.random()*colors.length)  
+
+body.style.backgroundColor=colors[index]
+colorName.innerHTML=colors[index]
+buttonEl.innerHTML=colors[index]
+
+ 
+ }
+
+
+
+ buttonEl.addEventListener("click",()=>{
+    changeColor()
+ })
