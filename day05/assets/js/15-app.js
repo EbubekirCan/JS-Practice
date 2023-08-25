@@ -45,3 +45,4 @@ buttonEl.innerHTML=colors[index]
  buttonEl.addEventListener("click",()=>{
     changeColor()
  })
+
