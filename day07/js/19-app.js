@@ -62,7 +62,7 @@ console.log(newArr)
   console.log(filtrele(5)) */
 
 
-
+/* 
 //!6- Dizideki sayıların ortalamasını bulun ortalamadan yüksek olanları
 // başka bir diziye atarak yazdırın.
 
@@ -70,17 +70,17 @@ const notlar1 = [38, 62, 74, 28, 86, 67, 92, 100, 56, 94, 72];
 
 let toplam=notlar1.reduce((acc,curr)=>acc+curr,0)
 //console.log(toplam)
-/* let ortalama=Math.floor( toplam/ notlar1.length) ; */
+// let ortalama=Math.floor( toplam/ notlar1.length) ; 
 
 let ortalama=( toplam/ notlar1.length)
 console.log(ortalama)
 
 
  ortalama=( toplam/ notlar1.length).toFixed() ;
-/* console.log(ortalama) */
+// console.log(ortalama) 
 
 let ortalamaUstu=notlar1.filter((not)=>not>ortalama)
-console.log(ortalamaUstu)
+console.log(ortalamaUstu) */
 
 
 //7- Dizideki notların ortalamasını bulun, ortalamadan yuksek olanların
@@ -99,3 +99,24 @@ const notlar = [
     { ad: "Sude Canlı", not: 94 },
     { ad: "Bade Sert", not: 72,},
     ]; 
+
+    let ort=notlar.reduce((x,y)=>x+y.not,0)
+ort=(ort/notlar.length).toFixed(2)
+console.log(ort)
+
+const yeniNotlar=notlar.map(item=>{
+   if(item.not>ort){
+    item.not=(item.not*1.2).toFixed(2)
+
+   }else{
+    item.not=(item.not*1.1).toFixed(2)
+   }
+   if(item.not>100){
+item.not=100
+   }
+
+   return item;
+
+})
+
+console.log(yeniNotlar)
