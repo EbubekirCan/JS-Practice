@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
   }
   
+
   .background-video {
     position: absolute;
     top: 0;
@@ -11,16 +12,16 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    filter: brightness(30%);
+    filter: brightness(50%);
     object-fit: cover;
-  
-  }
-  header{
+    -webkit-filter: brightness(50%);
+}
+  .container{
     min-height: 100vh;
     display: grid;
     place-items: center;
   }
+
   h1 {
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.568);
